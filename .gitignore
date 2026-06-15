@@ -1,0 +1,16 @@
+# 真实密钥绝不提交（任意层级的 .env）
+.env
+**/.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# OS / 编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
