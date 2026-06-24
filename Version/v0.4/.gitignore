@@ -1,0 +1,15 @@
+# 真实密钥绝不提交
+.env
+user_settings.json        # Web「设置」页写的覆盖层，可能含 API Key
+
+# 本地数据（向量库 / 会话库 / 知识库源文件），勿提交
+rag_chroma/
+*.db
+docs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/

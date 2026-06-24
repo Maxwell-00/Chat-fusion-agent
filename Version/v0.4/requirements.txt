@@ -1,0 +1,18 @@
+openai>=1.0
+python-dotenv>=1.0
+httpx>=0.27
+
+# Web UI（app.py）；CLI（main.py）不需要。需 6.x：消息字典格式为默认。
+gradio>=6
+
+# 本地 RAG（app.py「📚 知识库」/ CLI `/kb` / `ingest.py`）。不用 RAG 可不装这两项。
+# chromadb 较重（含原生依赖）；pypdf 仅 PDF 入库需要；numpy 由 chromadb 间接带入。
+chromadb>=0.5
+pypdf>=4.0
+
+# 可观测性（可选，设 FUSION_TRACING=1 才启用；见 tracing.py）。
+# 取消注释安装；装了 arize-phoenix 后，`python app.py` 会进程内自动起本地 Phoenix（无需另开终端）。
+# arize-phoenix
+# opentelemetry-sdk
+# opentelemetry-exporter-otlp-proto-http
+# openinference-instrumentation-openai
